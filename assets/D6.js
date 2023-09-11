@@ -225,10 +225,10 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-// const A = movies.filter(function (movies) {
-//   return Math.min(parseInt(movies.Year));
-// });
-// console.log(A);
+const A = movies.filter(function (movies) {
+  return Math.min(parseInt(movies.Year));
+});
+console.log(A);
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
@@ -247,13 +247,13 @@ console.log(count1());
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-// const titles = () => {
-
-const a = movies.map((movies) => {
-  return movies.Title;
-});
-// };
-console.log(a);
+const titles = () => {
+  const a = movies.map((movies) => {
+    return movies.Title;
+  });
+  return a;
+};
+console.log(titles());
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
